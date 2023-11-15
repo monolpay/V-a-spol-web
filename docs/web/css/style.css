@@ -1,0 +1,82 @@
+
+/* main */
+html {
+    background: whitesmoke;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+
+/* Nav menu */
+nav ul li{
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li.selected{
+    color: #e60376;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+
+}
+
+nav ul li a:hover {
+    color: red;
+
+}
+
+/* logo */
+img.logo {
+    height: 150px;
+    border: solid rgba(0, 0, 0, 0);
+    mask-image: url(/docs/web/img/V&S\ logo_circle.png);
+    mask-position: center;
+    mask-size: 150px;
+    animation: logo-off 1s both ;
+}
+
+img.logo:hover {
+    animation: logo-on 1s both;
+}
+
+video {
+    height: 250px;
+    border: solid rgba(0, 0, 0, 0);
+    animation: border-off 0.5s both;
+}
+
+video:hover {
+    animation: border-on 0.5s both;
+}
+
+
+
+@keyframes border-on {
+    0% {border-radius: 0%;}
+    100% {border-radius: 10%;}
+}
+
+@keyframes border-off {
+    100% {border-radius: 0%;}
+    0% {border-radius: 10%;}
+}
+
+@keyframes logo-on {
+    from {mask-size: 150px;}
+    to {mask-size: 350px;}
+}
+
+@keyframes logo-off {
+    from {mask-size: 350px;}
+    to {mask-size: 150px;}
+}
