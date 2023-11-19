@@ -43,6 +43,7 @@ img.logo {
     mask-position: center;
     mask-size: 150px;
     animation: logo-off 1s both ;
+    border-radius: 10%;
 }
 
 img.logo:hover {
@@ -73,10 +74,10 @@ video:hover {
 
 @keyframes logo-on {
     from {mask-size: 150px;}
-    to {mask-size: 350px;}
+    to {mask-size: 215px;}
 }
 
 @keyframes logo-off {
-    from {mask-size: 350px;}
+    from {mask-size: 220px;}
     to {mask-size: 150px;}
 }
